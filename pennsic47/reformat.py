@@ -16,6 +16,7 @@ contents = contents[contents.find('<table '):]
 contents = contents[contents.find('<tbody>')+7:]
 contents = contents[:contents.find('</table>')+8:]
 contents = contents.replace('\n', ' ').replace('</tr>', '</tr>\n')
+contents = contents.replace('&#39;', "'")
 
 with open('classes-all', 'w') as f:
     print(contents, file=f)
