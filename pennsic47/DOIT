@@ -18,3 +18,5 @@ fgrep 'Medieval Folk Dance' classes-all >> classes-dance
 fgrep 'Medieval Dances for Everyone' classes-all >> classes-dance
 fgrep 'Melodic Music Realizations on' classes-all >> classes-dance
 
+fgrep "Known World Dance" classes-all >> classes-dance
+
