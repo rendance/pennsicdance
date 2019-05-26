@@ -1,0 +1,13 @@
+# wget http://thing.pennsicuniversity.org/calendars
+# ./reformat.py calendars
+
+#wget http://thing.pennsicuniversity.org/assets/application-d340364c7e4f942c6c60078cc871725b2a6178da524b15abcd898d915ecc0287.css
+
+fgrep 'Dance Tent' classes-all | fgrep -v 'Closed Rehearsal' | grep -v 'Yoga for Dancers' > classes-dance
+
+fgrep 'Dancing in the Villa' classes-all >> classes-dance
+fgrep 'Gioliva' classes-all >> classes-dance
+
+fgrep 'Play Dance Music Arrangements from Lochac' classes-all >> classes-dance
+fgrep 'Clan Blue Feather Ball' classes-all >> classes-dance
+
