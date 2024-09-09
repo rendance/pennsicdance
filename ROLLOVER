@@ -1,0 +1,10 @@
+rollover tasks after PennsicN
+
+mkdir -f pennsicN
+git mv index.html pennsicN
+emacs pennsicN/index.html  # fix relative hrefs
+cp index.html.default index.html
+emacs index.html  # customize for new year
+emacs history.html  # add new year
+
+git commit -m '...' -a
